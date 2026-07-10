@@ -1,0 +1,34 @@
+@media (min-width: 700px) {
+
+  /* Hide hamburger, show nav permanently as a horizontal bar */
+  #hamburger-btn {
+    display: none;
+  }
+
+  nav#primary-nav {
+    max-height: none;
+    overflow: visible;
+  }
+
+  nav#primary-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: none;
+  }
+
+  .header-bar {
+    padding-bottom: 0;
+  }
+
+  /* Multi-column responsive grid */
+  .temple-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
