@@ -1,6 +1,5 @@
-/* ==========================================
-   Larger Screen Styles (768px and above)
-========================================== */
+
+  /* Larger Screen Styles  */
 
 @media screen and (min-width: 768px) {
 
@@ -17,6 +16,7 @@
     }
 
     /* Hide hamburger button */
+    
     #menu {
         display: none;
     }
@@ -35,17 +35,19 @@
     }
 
     nav a:hover {
-        background: white;
+        background: #fff;
         color: #0b4f6c;
     }
 
     /* Main */
+
     main {
         max-width: 1200px;
         padding: 2rem;
     }
 
     /* Gallery */
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
