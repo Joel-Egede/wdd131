@@ -1,100 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WDD 131 – Temple Album – Iloabuchi Egede</title>
-<meta name="description"
-content="A responsive photo album of temples for WDD 131, by Iloabuchi Egede.">
-<meta name="author" content="Iloabuchi Egede">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals Temple Album by Iloabuchi Egede">
+    <meta name="author" content="Iloabuchi Egede">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap"
-rel="stylesheet">
+    <title>Temple Album | WDD 131</title>
 
-<!-- mobile-first: temples.css loads first, temples-large.css overrides at wider widths -->
-<link rel="stylesheet" href="styles/temples.css">
-<link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<script src="scripts/temples.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
 
-  <header>
-    <div class="header-bar">
-      <span class="site-title">Temple Album</span>
-      <button id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="hamburger-icon">&#9776;</span>
-      </button>
-    </div>
-    <nav id="primary-nav">
-        <a href="index.html">Home</a>
+<header>
+
+    <h1>Temple Album</h1>
+
+    <button id="menu" aria-label="Open Navigation" aria-expanded="false">
+        &#9776;
+    </button>
+
+    <nav id="nav-menu">
+
+        <a href="#">Home</a>
         <a href="#">Old</a>
         <a href="#">New</a>
         <a href="#">Large</a>
         <a href="#">Small</a>
+
     </nav>
-  </header>
 
-  <main>
-    <h1>Temple Album</h1>
+</header>
 
-    <div class="temple-grid">
+<main>
 
-      <figure>
-        <img src="images/accra-ghana-temple.jpg" alt="Accra Ghana Temple" loading="lazy">
-        <figcaption>Accra Ghana Temple</figcaption>
-      </figure>
+    <h2>Temple Album</h2>
 
-      <figure>
-        <img src="images/lagos-nigeria-temple.jpg" alt="Lagos Nigeria Temple" loading="lazy">
-        <figcaption>Lagos Nigeria Temple</figcaption>
-      </figure>
+    <div class="gallery">
 
-      <figure>
-        <img src="images/london-england-temple.jpg" alt="London England Temple" loading="lazy">
-        <figcaption>London England Temple</figcaption>
-      </figure>
+        <figure>
+            <img src="images/accra.webp"
+                 alt="Accra Ghana Temple"
+                 loading="lazy">
+            <figcaption>Accra Ghana Temple</figcaption>
+        </figure>
 
-      <figure>
-        <img src="images/provo-city-center-temple.jpg" alt="Provo City Center Temple" loading="lazy">
-        <figcaption>Provo City Center Temple</figcaption>
-      </figure>
+        <figure>
+            <img src="images/lagos.webp"
+                 alt="Lagos Nigeria Temple"
+                 loading="lazy">
+            <figcaption>Lagos Nigeria Temple</figcaption>
+        </figure>
 
-      <figure>
-        <img src="images/rexburg-idaho-temple.jpg" alt="Rexburg Idaho Temple" loading="lazy">
-        <figcaption>Rexburg Idaho Temple</figcaption>
-      </figure>
+        <figure>
+            <img src="images/london.webp"
+                 alt="London England Temple"
+                 loading="lazy">
+            <figcaption>London England Temple</figcaption>
+        </figure>
 
-      <figure>
-        <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" loading="lazy">
-        <figcaption>Salt Lake Temple</figcaption>
-      </figure>
+        <figure>
+            <img src="images/provo.webp"
+                 alt="Provo Utah Temple"
+                 loading="lazy">
+            <figcaption>Provo Utah Temple</figcaption>
+        </figure>
 
-      <figure>
-        <img src="images/sydney-australia-temple.jpg" alt="Sydney Australia Temple" loading="lazy">
-        <figcaption>Sydney Australia Temple</figcaption>
-      </figure>
+        <figure>
+            <img src="images/rexburg.webp"
+                 alt="Rexburg Idaho Temple"
+                 loading="lazy">
+            <figcaption>Rexburg Idaho Temple</figcaption>
+        </figure>
 
-      <figure>
-        <img src="images/tokyo-japan-temple.jpg" alt="Tokyo Japan Temple" loading="lazy">
-        <figcaption>Tokyo Japan Temple</figcaption>
-      </figure>
+        <figure>
+            <img src="images/salt-lake.webp"
+                 alt="Salt Lake City Temple"
+                 loading="lazy">
+            <figcaption>Salt Lake City Temple</figcaption>
+        </figure>
 
-      <figure>
-        <img src="images/washington-dc-temple.jpg" alt="Washington D.C. Temple" loading="lazy">
-        <figcaption>Washington D.C. Temple</figcaption>
-      </figure>
+        <figure>
+            <img src="images/sydney.webp"
+                 alt="Sydney Australia Temple"
+                 loading="lazy">
+            <figcaption>Sydney Australia Temple</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/tokyo.webp"
+                 alt="Tokyo Japan Temple"
+                 loading="lazy">
+            <figcaption>Tokyo Japan Temple</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/washington.webp"
+                 alt="Washington D.C. Temple"
+                 loading="lazy">
+            <figcaption>Washington D.C. Temple</figcaption>
+        </figure>
 
     </div>
-  </main>
 
-  <footer>
-    <p>&copy; <span id="currentyear"></span> Iloabuchi Egede &nbsp;•&nbsp; Lagos, Nigeria </p>
+</main>
+
+<footer>
+
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        Iloabuchi Egede | Nigeria
+    </p>
+
     <p id="lastModified"></p>
-  </footer>
+
+</footer>
 
 </body>
 </html>

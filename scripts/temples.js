@@ -1,16 +1,20 @@
-// Footer: dynamic year and last-modified date
-document.getElementById("currentyear").innerHTML = new Date().getFullYear();
-document.getElementById("lastModified").innerHTML =
-  "Last Modified: " + document.lastModified;
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector("#nav-menu");
 
-// Hamburger menu toggle
-const hamburgerBtn = document.getElementById("hamburger-btn");
-const primaryNav = document.getElementById("primary-nav");
+menuButton.addEventListener("click", () => {
 
-hamburgerBtn.addEventListener("click", () => {
-  const isOpen = primaryNav.classList.toggle("open");
-  hamburgerBtn.setAttribute("aria-expanded", isOpen);
-  hamburgerBtn.innerHTML = isOpen
-    ? '<span class="hamburger-icon">&times;</span>'
-    : '<span class="hamburger-icon">&#9776;</span>';
+    navigation.classList.toggle("open");
+
+    const isOpen = navigation.classList.contains("open");
+
+    menuButton.innerHTML = isOpen ? "&#10005" : "&#9776";
+
+    menuButton.setAttribute("aria-expanded", isOpen);
+
 });
+
+document.querySelector("#currentyear").textContent =
+new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent =
+`Last Modified: ${document.lastModified}`;

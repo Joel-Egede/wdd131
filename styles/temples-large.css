@@ -1,34 +1,58 @@
-@media (min-width: 700px) {
+/* ==========================================
+   Larger Screen Styles (768px and above)
+========================================== */
 
-  /* Hide hamburger, show nav permanently as a horizontal bar */
-  #hamburger-btn {
-    display: none;
-  }
+@media screen and (min-width: 768px) {
 
-  nav#primary-nav {
-    max-height: none;
-    overflow: visible;
-  }
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
 
-  nav#primary-nav {
-    flex-direction: row;
-    justify-content: space-evenly;
-    border-top: none;
-  }
+    header h1 {
+        margin: 0;
+    }
 
-  .header-bar {
-    padding-bottom: 0;
-  }
+    /* Hide hamburger button */
+    #menu {
+        display: none;
+    }
 
-  /* Multi-column responsive grid */
-  .temple-grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-  }
-}
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
 
-@media (min-width: 1000px) {
-  .temple-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    nav a {
+        padding: .75rem 1rem;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background: white;
+        color: #0b4f6c;
+    }
+
+    /* Main */
+    main {
+        max-width: 1200px;
+        padding: 2rem;
+    }
+
+    /* Gallery */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    figure img {
+        height: 220px;
+    }
 }
