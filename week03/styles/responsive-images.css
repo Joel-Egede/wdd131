@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#0b4f6c;
+    color:white;
+    text-align:center;
+    padding:1.5rem;
+}
+
+main{
+    max-width:1200px;
+    margin:2rem auto;
+    padding:1rem;
+}
+
+.hero img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:10px;
+}
+
+footer{
+    background:#0b4f6c;
+    color:white;
+    text-align:center;
+    padding:1rem;
+    margin-top:2rem;
+}
