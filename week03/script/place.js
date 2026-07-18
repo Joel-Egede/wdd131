@@ -1,6 +1,6 @@
-// ==============================
+
 // Footer Dates
-// ==============================
+
 
 // Current Year
 const year = new Date().getFullYear();
@@ -11,19 +11,19 @@ document.getElementById("lastModified").textContent =
 `Last Modification: ${document.lastModified}`;
 
 
-// ==============================
+
 // Weather Variables
 // (Static values for this assignment)
-// ==============================
+
 
 const temperature = 30; // °C
 const windSpeed = 8;     // km/h
 
 
-// ==============================
+
 // Wind Chill Function
 // Metric Formula (°C)
-// ==============================
+
 
 function calculateWindChill(temp, speed) {
     return (
@@ -35,9 +35,9 @@ function calculateWindChill(temp, speed) {
 }
 
 
-// ==============================
+
 // Display Wind Chill
-// ==============================
+
 
 const windChill = document.getElementById("windchill");
 
