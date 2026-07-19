@@ -1,62 +1,44 @@
-/*   Desktop View */
+@media screen and (min-width:768px) {
 
-@media screen and (min-width: 768px) {
+    /*  Main Layout */
 
-    /* Hero becomes the positioning container */
+    main {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    /*  Hero Image */
+
     .hero {
-        position: relative;
+        grid-column: 1 / 3;
     }
 
     .hero img {
         width: 100%;
         height: auto;
-        display: block;
+        border-radius: 10px;
     }
 
-    /* Remove main padding */
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0;
+    /* Cards */
+
+    .card {
+        margin: 0;
     }
 
-    /* Data Card */
-    .data {
-        position: absolute;
-        top: 40px;
-        left: 30px;
-        width: 300px;
-        background: rgba(255,255,255,.92);
-    }
+    /* Weather Heading */
 
-    /* Weather Card */
-    .weather {
-        position: absolute;
-        bottom: 40px;
-        right: 30px;
-        width: 300px;
-        background: rgba(255,255,255,.92);
-    }
-
-    /* Hide SVG weather icon */
     .weather-icon {
         display: none;
     }
 
-    /* Weather emoji required by assignment */
     .weather h2::after {
         content: " ⛅";
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        margin-left: .5rem;
     }
 
-    /* Card headings */
-    .card h2 {
-        text-align: left;
-        padding-left: 1rem;
-    }
-
-    /* Footer */
-    footer {
-        margin-top: 0;
-    }
 }
