@@ -1,0 +1,39 @@
+/* Desktop View */
+@media screen and (min-width: 768px) {
+
+    /* Hide hamburger button */
+    #menu {
+        display: none;
+    }
+
+    /* Show navigation*/
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    nav a {
+        padding: .5rem 1rem;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Three-column gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure {
+        transition: transform .3s ease;
+    }
+
+    figure:hover {
+        transform: scale(1.03);
+    }
+}
