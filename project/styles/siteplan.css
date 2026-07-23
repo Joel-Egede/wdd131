@@ -1,0 +1,83 @@
+/* Google Font */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0D47A1;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header img{
+    display: block;
+    margin: 0 auto 1rem;
+    width: 200px;
+    height: auto;
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+/* Headings */
+
+h2,
+h3 {
+    color: #0D47A1;
+}
+
+header h1, p {
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    border-bottom: 3px solid #FF9800;
+    padding-bottom: .5rem;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: .75rem;
+}
+
+/* Wireframes */
+pre {
+    background: #eeeeee;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+/* Footer */
+footer {
+    background-color: #0D47A1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
